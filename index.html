@@ -1,10 +1,35 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta http-equiv="refresh" content="0; url=https://atlas-odds-during-manufacturing.trycloudflare.com/">
+    <meta charset="UTF-8">
+
+    <!-- 캐시 방지 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <title>Redirecting...</title>
 </head>
+
 <body>
-    Redirecting...
+
+<p>Redirecting...</p>
+
+<script>
+    // GitHub Pages 캐시를 피하기 위한 랜덤 값
+    const cacheBuster = Date.now();
+
+    // 현재 페이지를 다시 요청
+    const url = window.location.pathname + "?v=" + cacheBuster;
+
+    // 실제 redirect URL
+    const target = "https://YOUR-TUNNEL.trycloudflare.com";
+
+    window.location.replace(target);
+</script>
+
 </body>
 </html>
+```
